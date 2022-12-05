@@ -1,4 +1,11 @@
-##USES RyanVariablesWIP.ps1##
+## ASSUMED TO HAVE RAN RyanVariablesWIP.ps1##
+#$domain = Get-AzureADDomain
+#$DName = $domain.name
+#$PswdProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+
+#CHANGE PASSWORD BELOW!
+
+#$PswdProfile.Password = "D3f@ultPa5sw0rd!!"
 
 $bulkfile = Read-Host "enter filepath"
 $bulk = Import-CSV $bulkfile
