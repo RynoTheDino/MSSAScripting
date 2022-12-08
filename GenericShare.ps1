@@ -2,7 +2,7 @@
 $NewFolder = Read-Host "Input the Directory you wish to create"
 
 # Set the name of the network share
-$shareName = "<share-name>"
+$shareName = Read-Host "Name your Share"
 
 # Create the network share
 New-SmbShare -Name $shareName -Path $NewFolder -FullAccess Everyone
